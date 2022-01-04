@@ -79,18 +79,17 @@ idealNumber(345);
 
 //2
 function IdealNumbers(a, b) {
-    let resultat;
     for (let i = a; i<b; i++) {
         sum = 0;
         for (let n = 1; n <= i/2; n++) {
             if (i % n ===0) sum +=n;
         }
-        if (i===sum)
-        console.log(i);
+        if (i===sum) {
+        console.log(i + ' - досконале число в заданому діапазоні');
+        }
     }
-    return resultat;
 }
-IdealNumbers(1,1000);
+IdealNumbers(1,500);
 
 
 
